@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя визитка</title>
+
+  <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? + -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <!-- TODO: замени на свои инициалы или любимое эмодзи -->
+    <div class="avatar">❤️❤️❤️</div>
+
+    <!-- TODO: впиши своё имя -->
+    <h1 class="name">Субханов Динар</h1>
+
+    <!-- TODO: впиши, кто ты -->
+    <p class="role">Студент 1 курса · плейбой, миллиардер, филантроп</p>
+
+    <!-- TODO: пара предложений о себе -->
+    <p class="bio">
+      Коротко о себе: добрый, милый парень, который только столкнулся с фронтендом и птыается его изучить.
+    </p>
+
+    <h2 class="subtitle">Чем увлекаюсь</h2>
+    <ul class="interests">
+      <!-- TODO: впиши свои увлечения (можно больше трёх) -->
+      <li>Футбол</li>
+
+      <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? + -->
+      <li>Игры</li>
+
+      <li>Сериалы</li>
+    </ul>
+
+    <div class="actions">
+      <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
+           Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). + -->
+      <button id="contact-btn" class="btn">Показать контакт</button>
+
+      <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
+    </div>
+
+    <!-- почта спрятана, пока не нажмут кнопку -->
+    <p id="contact" class="contact hidden">
+      <!-- TODO: впиши свою почту -->
+      ✉️ dinarsubhanov123@gmail.com
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
